@@ -1,0 +1,158 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    color: #424242;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: #FFFFFF;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1976D2;
+}
+
+header .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+header .search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+header .search-bar button {
+    padding: 10px;
+    background-color: #FFC107;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+header .nav-links a {
+    margin-left: 10px;
+    color: #1976D2;
+    text-decoration: none;
+    padding-left:250px;
+}
+
+header .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    margin-top: 20px;
+}
+
+.blog-grid {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.blog-post {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.blog-post img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.blog-post h2 {
+    color: #1976D2;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.blog-post p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.blog-post .read-more {
+    color: #FFC107;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-post .read-more:hover {
+    color: #FFA000;
+}
+
+
+.sidebar {
+    flex: 1;
+    margin-left: 20px;
+    padding: 15px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    color: #1976D2;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #1976D2;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    color: #FFC107;
+}
+
+
+footer {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #E0E0E0;
+    margin-top: 20px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    color: #1976D2;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    color: #FFC107;
+}
